@@ -24,7 +24,6 @@ mod tests {
     use super::excercise_two;
 
     #[test]
-    #[available_gas(100000)]
     fn it_works() {
         assert(excercise_one() == 305, 'Sum should be 305!');
     }
@@ -33,6 +32,4 @@ mod tests {
     fn check_excercise_two() {
         assert(excercise_two() == ('sushi', 'pizza'), 'Should be the right food!');
     }
-
-
 }
