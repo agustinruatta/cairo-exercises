@@ -1,5 +1,5 @@
-// Excercise 1: Make the mathematical addition work by modifying the code.
-fn excercise_one() -> u16 {
+// Exercise 1: Make the mathematical addition work by modifying the code.
+fn exercise_one() -> u16 {
     // Only modify the 2 lines below. Don't write any new lines of code.
     let x = 5_u8;
     let y: felt252 = 300;
@@ -8,8 +8,8 @@ fn excercise_one() -> u16 {
     sum
 }
 
-// Excercise 2: take the values representing food from the 'random_elements' tuple and store them in a new tuple variable called 'food'.
-fn excercise_two() -> (felt252, felt252) {
+// Exercise 2: take the elements representing food from the 'random_elements' tuple and store them in a new tuple variable called 'food'.
+fn exercise_two() -> (felt252, felt252) {
     let random_elements = (100, 'sushi', 1, true, 'pizza', 'computer');
     // Write your code below this line. Don't modify the code above this line.
 
@@ -20,16 +20,16 @@ fn excercise_two() -> (felt252, felt252) {
 
 #[cfg(test)]
 mod tests {
-    use super::excercise_one;
-    use super::excercise_two;
+    use super::exercise_one;
+    use super::exercise_two;
 
     #[test]
     fn it_works() {
-        assert(excercise_one() == 305, 'Sum should be 305!');
+        assert(exercise_one() == 305, 'Sum should be 305!');
     }
 
     #[test]
-    fn check_excercise_two() {
-        assert(excercise_two() == ('sushi', 'pizza'), 'Should be the right food!');
+    fn check_exercise_two() {
+        assert(exercise_two() == ('sushi', 'pizza'), 'Should be the right food!');
     }
 }
